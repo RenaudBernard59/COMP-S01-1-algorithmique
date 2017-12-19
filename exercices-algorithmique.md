@@ -114,28 +114,67 @@ while (reason)
     IF number >= 1 && number <=3
         reason = False
         ECRIRE("réponse correcte")
+    FIN IF
+FIN WHILE
+FIN
+
+
+number = LIRE ("message")
+TANTQUE number >= 1 || number <= 3
+    number = LIRE("message")
+FIN TANQUE
+ECRIRE("C'est bon")
+FIN
 
 
 =====================
-**aaa**
+**Ecrire l'algorithme qui affiche la table de multiplication par 9**
 
 **Résultat :**
 
-=====================
-**aaa**
-
-
-**Résultat :**
-
-
-
-
+for (i=1;i<=10;i++)
+    resultat = 9 * i
+    print("9 * " + i + " = " + resultat)
 
 
 =====================
-**aaa**
+**Traduire**
+POUR i allant de 1 à 5
+    POUR j allant de 1 à i
+        ECRIRE("O")
+    FINPOUR
+    ECRIRE("K")
+    ECRIRE("\n")
+FINPOUR
 
 **Résultat :**
+"OK\n"
+"OOK\n"
+"OOOK\n"
+"OOOOK\n"
+"OOOOOK\n"
+
+=====================
+**Créer une fonction qui renvoie le plus grand de 2 nombres différents
+Puis écrire un programme qui demande les 2 nombres à l'utilidateur et affiche le plus grand des 2 nombres avec la fonction précédente
+**
+
+**Résultat :**
+INT nb1, nb2
+
+nb1 = INPUT("Entrez un premier nombre : ")
+nb2 = INPUT("Entrez un deuxième nombre : ")
+
+def lePlusGrand(nb1, nb2)
+    if nb1 > nb2
+        return nb1
+    elif nb1 < nb2
+        return nb2
+    else
+        return "les 2 nombres sont égaux"
+END FUNCTION
+
+print("Le résultat est : " + lePlusGrand(nb1, nb2))
 
 =====================
 **aaa**
