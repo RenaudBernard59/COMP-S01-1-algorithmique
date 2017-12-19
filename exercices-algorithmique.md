@@ -80,34 +80,153 @@ IF n > 12
 
 
 =====================
-**aaa**
+**Le prix d'une clef USB dans un magasin spécialisé varie selon le volume acheté
+* 5€ l'unité s'il en achète moins de 10
+* 4€ l'unité s'il en achète entre 10 et 20
+* 3€ l'unité s'il en achète plus de 20
+**
+**Résultat :**
+var INT prixUnitaire, prixTotal, quantite
 
+quantite = LIRE("Quelle quantité de clef USB voulez-vous acheter : ")
 
+IF (quantite < 10)
+    prixUnitaire := 5;
+ELSE IF (10 <= quantite <= 20) // (10 <= quantite && quantite <= 20)
+    prixUnitaire := 4;
+ELSE IF (quantite > 20)
+    prixUnitaire := 3;
+ELSE
+    AFFICHER("ERROR!")
+prixTotal := prixUnitaire, * quantite
+
+AFFICHER("Pour l'achat de " + quantite + " clef USB au prix unitaire de " + prixUnitaire + " le total à payer seras de " + prixTotal + " €.")
+
+=====================
+**Ecrire un algorithme qui demande à l'user un nombre compris enre 1 et 3 jusq'à ce que la réponse soit correcte**
 
 **Résultat :**
+VAR INT number 
+VAR BOOL reason = True
+
+while (reason)
+    number = LIRE("Taper un entier entre 1 et 3") 
+    IF number >= 1 && number <=3
+        reason = False
+        ECRIRE("réponse correcte")
 
 
 =====================
 **aaa**
 
-
-
 **Résultat :**
-
 
 =====================
 **aaa**
 
 
-
 **Résultat :**
+
+
+
+
 
 
 =====================
 **aaa**
 
+**Résultat :**
+
+=====================
+**aaa**
 
 
 **Résultat :**
+
+
+
+
+
+
+=====================
+**aaa**
+
+**Résultat :**
+
+=====================
+**aaa**
+
+
+**Résultat :**
+
+
+
+
+
+
+=====================
+**aaa**
+
+**Résultat :**
+
+=====================
+**aaa**
+
+
+**Résultat :**
+
+
+
+
+
+
+=====================
+**aaa**
+
+**Résultat :**
+
+=====================
+**aaa**
+
+
+**Résultat :**
+
+
+
+
+
+
+=====================
+**aaa**
+
+**Résultat :**
+
+=====================
+**aaa**
+
+
+**Résultat :**
+
+
+
+
+
+
+=====================
+**aaa**
+
+**Résultat :**
+
+=====================
+**aaa**
+
+
+**Résultat :**
+
+
+
+
+
+
 
 
