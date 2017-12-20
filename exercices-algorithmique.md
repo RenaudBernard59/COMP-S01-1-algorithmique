@@ -177,27 +177,43 @@ END FUNCTION
 print("Le résultat est : " + lePlusGrand(nb1, nb2))
 
 =====================
-**aaa**
-
+**Ecrire un algorithme permettant de saisir 30 notes et de les affichés**
 
 **Résultat :**
+var notesTab TAB[30] INT
 
+for (i=0;i<=30;i++) {
+    notesTab(i) = input('Entrez une note :')
+}
 
-
-
+for (i=0;i<=30;i++) {
+    print("Note N°" + i + " : " + notesTab(i) + ".\n")
+}
 
 
 =====================
-**aaa**
+**Ecrire un alorithme permettant des notes d'une classe de 15 étudiants pour 3 matières**
 
 **Résultat :**
+tab = TAB[15][3] INT
+
+for (i=0;i<15;i++)
+    for(j=0;j<3;j++)
+        tab[i][j] = input("insérer ma note de l'élève N°" + i + " et de la matière N°" + j + ".")
+END
 
 =====================
-**aaa**
-
+**Donner les valeurs des variables a, b et c**
+a <- 4 * 2 + 5
+b <- 5 + 3 * 2 - 5
+c <- (a > b) ET (b > 2)
+d <- (a < b) OU (b > 2)
 
 **Résultat :**
-
+a = 8 + 5 = 13
+b = 5 + 6 - 5 = 6
+c = T et T = T
+d = F ou T = T
 
 
 
