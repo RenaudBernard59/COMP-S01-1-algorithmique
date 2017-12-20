@@ -220,9 +220,20 @@ d = F ou T = T
 
 
 =====================
-**aaa**
+**Ecrire un algorithme qui affiche ce triangle d'étoiles**
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
 
 **Résultat :**
+var = "* "
+tempVar = ""
+for (i = 0; i < 5; i++)
+    print(tempVar = tempVar + var)
+
 
 =====================
 **aaa**
