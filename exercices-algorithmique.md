@@ -2,6 +2,8 @@
 
 ##Intituler
 **Donner les valeurs des varaibles A, B et C après exécution des instructions suivantes :**
+
+    ```
     VAR A, B, C : ENTIERS
     A <- 7;
     B <- 17;
@@ -10,37 +12,48 @@
     C <- A+B;
     C <- B-A;
     FIN
+    ```
 
 **Résultat :**
+    ```
     A = 7
     B = 17
     A = 17
     B = 17 + 5 = 22
     C = A + B = 17 + 22 = 39
     C = B - A = 22 - 17 = 5
+    ```
 =====================
 **Donner les valeurs des varaibles A et  B après exécution des instructions suivantes :**
+    ```
     VAR A, B : ENTIERS
     A <-6
     B <-2
     A <-B
     B<-A
     FIN
+    ```
 
 **Résultat :**
+
+    ```
     A = 6
     B = 2
     A = 2
     B = A = 2
     B = 2
+    ```
 =====================
 **Ecrire un programme qui permet d'échanger les valeurs de 2 variables:**
+    ```
     VAR A, B ENTIERS
     A <- 2
     B <- 3
     FIN
+    ```
 
 **Résultat :**
+    ```
     VAR temp ENTIER
     A = 2
     B = 3
@@ -50,34 +63,42 @@
     A = 3
     B = temp = 2
     B = 2
+    ```
 
 =====================
 **Priorité des opérateurs**
+    ```
     A = 9 + 3*4
     B = (9 + 3)*4*
+    ```
 
 **Résultat :**
+    ```
     A = 9 + 3*4 = 9 + 12 = 21
     B =(9+3)*4 = 12*4 = 48
+    ```
 
 =====================
 **Ecrire un algorithme qui permet d'effectuer la saisioe d'un nom, d'un prénom et d'afficher ensuite le nom complet**
 
 **Résultat :**
+    ```
     VAR prenom, nom STR
     prenom = LIRE("Ecrire Prenom :")
     nom = LIRE("Ecrire nom :")
     ECRIRE(nom + " " + prenom)
+    ```
 
 =====================
 **Ecrire un algorithme qui demande un nombre entier à l'user, le test et affiche si il est supérieur à 12**
 
 **Résultat :**
+    ```
     VAR n INT
     n = LIRE("Entrer un entier :")
     IF n > 12
         ECRIRE("Le nombre est " + n + ".")
-
+    ```
 
 =====================
 **Le prix d'une clef USB dans un magasin spécialisé varie selon le volume acheté
@@ -86,10 +107,10 @@
 * 3€ l'unité s'il en achète plus de 20
 **
 **Résultat :**
+
+    ```
     var INT prixUnitaire, prixTotal, quantite
-
     quantite = LIRE("Quelle quantité de clef USB voulez-vous acheter : ")
-
     IF (quantite < 10)
         prixUnitaire := 5;
     ELSE IF (10 <= quantite <= 20) // (10 <= quantite && quantite <= 20)
@@ -99,16 +120,17 @@
     ELSE
         AFFICHER("ERROR!")
     prixTotal := prixUnitaire, * quantite
-
     AFFICHER("Pour l'achat de " + quantite + " clef USB au prix unitaire de " + prixUnitaire + " le total à payer seras de " + prixTotal + " €.")
+    ```
 
 =====================
 **Ecrire un algorithme qui demande à l'user un nombre compris enre 1 et 3 jusq'à ce que la réponse soit correcte**
 
 **Résultat :**
+
+    ```
     VAR INT number 
     VAR BOOL reason = True
-
     while (reason)
         number = LIRE("Taper un entier entre 1 et 3") 
         IF number >= 1 && number <=3
@@ -117,28 +139,28 @@
         FIN IF
     FIN WHILE
     FIN
-
-
     number = LIRE ("message")
     TANTQUE number >= 1 || number <= 3
         number = LIRE("message")
     FIN TANQUE
     ECRIRE("C'est bon")
     FIN
-
+    ```
 
 =====================
 **Ecrire l'algorithme qui affiche la table de multiplication par 9**
 
 **Résultat :**
 
+    ```
     for (i=1;i<=10;i++)
         resultat = 9 * i
         print("9 * " + i + " = " + resultat)
-
+    ```
 
 =====================
 **Traduire**
+    ```
     POUR i allant de 1 à 5
         POUR j allant de 1 à i
             ECRIRE("O")
@@ -146,13 +168,17 @@
         ECRIRE("K")
         ECRIRE("\n")
     FINPOUR
+    ```
 
-    **Résultat :**
+**Résultat :**
+
+    ```
     "OK\n"
     "OOK\n"
     "OOOK\n"
     "OOOOK\n"
     "OOOOOK\n"
+    ```
 
 =====================
 **Créer une fonction qui renvoie le plus grand de 2 nombres différents
@@ -160,11 +186,11 @@ Puis écrire un programme qui demande les 2 nombres à l'utilidateur et affiche 
 **
 
 **Résultat :**
-    INT nb1, nb2
 
+    ```
+    INT nb1, nb2
     nb1 = INPUT("Entrez un premier nombre : ")
     nb2 = INPUT("Entrez un deuxième nombre : ")
-
     def lePlusGrand(nb1, nb2)
         if nb1 > nb2
             return nb1
@@ -173,15 +199,15 @@ Puis écrire un programme qui demande les 2 nombres à l'utilidateur et affiche 
         else
             return "les 2 nombres sont égaux"
     END FUNCTION
-
     print("Le résultat est : " + lePlusGrand(nb1, nb2))
+    ```
 
 =====================
 **Ecrire un algorithme permettant de saisir 30 notes et de les affichés**
 
 **Résultat :**
+    ```
     var notesTab TAB[30] INT
-
     for (i=0;i<=30;i++) {
         notesTab(i) = input('Entrez une note :')
     }
@@ -189,31 +215,38 @@ Puis écrire un programme qui demande les 2 nombres à l'utilidateur et affiche 
     for (i=0;i<=30;i++) {
         print("Note N°" + i + " : " + notesTab(i) + ".\n")
     }
-
+    ```
 
 =====================
 **Ecrire un alorithme permettant des notes d'une classe de 15 étudiants pour 3 matières**
 
 **Résultat :**
-    tab = TAB[15][3] INT
 
+    ```
+    tab = TAB[15][3] INT
     for (i=0;i<15;i++)
         for(j=0;j<3;j++)
             tab[i][j] = input("insérer ma note de l'élève N°" + i + " et de la matière N°" + j + ".")
     END
-
+    ```
 =====================
 **Donner les valeurs des variables a, b et c**
+
+    ```
     a <- 4 * 2 + 5
     b <- 5 + 3 * 2 - 5
     c <- (a > b) ET (b > 2)
     d <- (a < b) OU (b > 2)
+    ```
 
 **Résultat :**
+    
+    ```
     a = 8 + 5 = 13
     b = 5 + 6 - 5 = 6
     c = T et T = T
     d = F ou T = T
+    ```
 
 
 
@@ -221,18 +254,24 @@ Puis écrire un programme qui demande les 2 nombres à l'utilidateur et affiche 
 
 =====================
 **Ecrire un algorithme qui affiche ce triangle d'étoiles**
+
+    ```
     * 
     * * 
     * * * 
     * * * * 
     * * * * * 
     * * * * * * 
+    ```
 
 **Résultat :**
+    
+    ```
     var = "* "
     tempVar = ""
     for (i = 0; i < 5; i++)
         print(tempVar = tempVar + var + "\n")
+    ```
 
 
 =====================
